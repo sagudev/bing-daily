@@ -1,1 +1,2 @@
 # bing-daily
+r
