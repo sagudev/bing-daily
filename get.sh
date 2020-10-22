@@ -34,11 +34,11 @@ defaultPicURL=$bing$(echo $xmlContent | grep -oP "<url>(.*)</url>" | cut -d ">" 
 if wget --quiet --spider "$desiredPicURL"
 then
     # Download the Bing pic of the day at desired resolution
-    curl $desiredPicURL > "./bing.jpg" 
+    curl $desiredPicURL > "bing.jpg" 
 else
     # Set picName to the default picName
     # Download the Bing pic of the day at default resolution
-    curl $defaultPicURL > "./bing.jpg"
+    curl $defaultPicURL > "bing.jpg"
 fi
 
 # Exit the script
