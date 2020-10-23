@@ -4,7 +4,7 @@ on:
   push:
   schedule:
     # 4:02 everyday
-    - cron:  '2 10,20 * * *'
+    - cron:  '2 7,20 * * *'
 
 jobs:
   update:
