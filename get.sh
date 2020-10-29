@@ -24,7 +24,7 @@ desiredPicRes="_UHD"
 # Form the URL for the desired pic resolution
 xmlContent=$(curl -s $xmlURL)
 
-desiredPicURL=$bing$(echo $xmlContent | grep -oP "<urlBase>(.*)</urlBase>" | cut -d ">" -f 2 | cut -d "<" -f 1)$desiredPicRes$picExt
+desiredPicURL=$bing$(echo $xmlContent | grep -oP "<urlBase>(.*)</urlBase>" | cut -d ">" -f 2 | cut -d "<" -f 1)$desiredPicRes.jpg
 
 # Form the URL for the default pic resolution
 defaultPicURL=$bing$(echo $xmlContent | grep -oP "<url>(.*)</url>" | cut -d ">" -f 2 | cut -d "<" -f 1)
