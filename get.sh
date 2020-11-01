@@ -11,7 +11,7 @@ bing="www.bing.com"
 #
 # The idx parameter determines where to start from. 0 is the current day,
 # 1 the previous day, etc.
-xmlURL="http://www.bing.com/HPImageArchive.aspx?format=xml&idx=0&n=1"
+xmlURL="http://global.bing.com/HPImageArchive.aspx?format=xml&idx=0&n=1"
 
 # The desired Bing picture resolution to download
 # Valid options: "_1024x768" "_1280x720" "_1366x768" "_1920x1200"
