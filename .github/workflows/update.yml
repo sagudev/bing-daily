@@ -26,6 +26,6 @@ jobs:
       with:
         branch: ${{ github.ref }}
         github_token: ${{ secrets.GITHUB_TOKEN }}
-    - name: Deploy to gh-pages 
-      run: |
-        curl -X POST https://api.github.com/repos/sagudev/bing-daily/pages/builds -H "Accept: application/vnd.github.mister-fantastic-preview+json" -u sagudev:${{ secrets.GH_TOKEN }}
+    #- name: Deploy to gh-pages 
+    #  run: |
+    #    curl -X POST https://api.github.com/repos/sagudev/bing-daily/pages/builds -H "Accept: application/vnd.github.mister-fantastic-preview+json" -u sagudev:${{ secrets.GH_TOKEN }}
